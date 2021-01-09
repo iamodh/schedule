@@ -1,7 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <title>Schedule</title>
+
+    <style>
+
+      body {
+        font-family:'Alegreya', serif;
+        
+        text-align: center;
+        background-color: beige ;
+
+        position: relative;
+      }
+
+      hr {
+        width: 20%;
+        border: gray 1.5px solid;
+        border-radius: 20px;
+        margin: 30px auto;
+      }
+
+      header h1 {
+        font-size: 50px;
+      }
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-family: 'Noto Serif Korean', serif;
+        background-color: white;
+      }
+
+      td, th {
+        border: solid 1px black;
+        width: 80px;
+        height: 50px;
+      }
+
+      figure {
+        width: 700px;
+        height: 550px;
+        background-color:#252524;
+        padding: 20px 10px 40px 10px;
+        margin: auto;
+        border-radius: 11px;;
+      }
+
+      figure img {
+        width: 700px;
+        height: 550px;
+      }
+
+      figcaption {
+        color:white;
+        font-size: 20px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+      }
+
+    </style>
   </head>
   <body>
     <header>
@@ -26,16 +93,17 @@
           </thead>
           <tbody>
             <tr>
-              <td>오전</td>
+              <th scope="row">오전</th>
               <td>하트시그널 3화</td>
               <td>도서관</td>
               <td rowspan="2">전세 매물 발품</td>
               <td rowspan="2">장유</td>
               <td rowspan="2">전세 매물 발품</td>
               <td rowspan="2">예비군</td>
+              <td rowspan="2"></td>
             </tr>
             <tr>
-              <td>오후</td>
+              <th scope="row">오후</th>
               <td></td>
               <td>추용혁</td>
             </tr>
@@ -48,12 +116,12 @@
         </table>
         <br>
         <figure>
-          <img src="stone.jpg" width="50%">
+          <img src="stone.jpg" width="80%";>
+          <figcaption>"Thanks For Sharing (2012)"</figcaption>
         </figure>
     </main>
-    <hr>
     <footer>
-      <span>ohdonghwan</span>
+      <span>2021. 01. 09 ohdonghwan</span>
     </footer>
   </body>
 </html>
